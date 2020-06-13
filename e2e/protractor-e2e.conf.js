@@ -9,6 +9,7 @@ const path = require('path');
 const fs = require('fs');
 const mkdirp = require('mkdirp');
 const now = new Date();
+
 exports.report_name = 'Report-' + now.getFullYear() + "-" + (now.getMonth() + 1) + "-" + now.getDate() + "-" + now.getHours() + "-" + now.getMinutes() + "-" + now.getSeconds();
 exports.logfile_name = 'results-' + now.getFullYear() + "-" + (now.getMonth() + 1) + "-" + now.getDate() + "-" + now.getHours() + "-" + now.getMinutes() + "-" + now.getSeconds();
 var Reporter = path.resolve("./target/");
